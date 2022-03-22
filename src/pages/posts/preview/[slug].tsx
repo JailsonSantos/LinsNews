@@ -79,7 +79,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const response = await prismic.getByUID("post", String(slug), {});
 
   const post = {
-    slug: response.uid,
+    slug,
     title: RichText.asText(response.data.title),
     content: RichText.asHtml(response.data.content.splice(0, 3)),
     updatedAt: new Date(response.last_publication_date).toLocaleDateString(
@@ -98,4 +98,5 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     },
     redirect: 60 * 30, // 30 minutes
   }
+
 }
