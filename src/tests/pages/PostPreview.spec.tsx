@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { mocked } from 'jest-mock'
-import { useSession } from 'next-auth/client'
+import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import Post, { getStaticProps } from '../../pages/posts/preview/[slug]'
 import { getPrismicClient } from '../../services/prismic'

@@ -5,7 +5,7 @@ import { Provider as NextAuthProvider } from 'next-auth/client'
 
 import '../styles/global.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <NextAuthProvider session={pageProps.session}>
       <Header />
@@ -14,4 +14,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default App
