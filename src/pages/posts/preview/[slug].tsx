@@ -62,11 +62,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
 // As paginas que não sao dinamicas por padrão o nextjs ja tras elas estáticas
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [
-      /*  {
-         params: { slug: 'amstack-geleia-de-javascript-api-e-markup' }
-       } */
-    ],
+    paths: [],    // params: { slug: 'amstack-geleia-de-javascript-api-e-markup' }
     fallback: 'blocking' // true, false ou blocking
   }
 }

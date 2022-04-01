@@ -5,10 +5,15 @@ import { getStripeJs } from '../../services/stripe-js';
 import styles from './styles.module.scss';
 
 
+import { useState } from 'react';
+import ReactLoading from 'react-loading';
+
+
 export function SubscribeButton() {
 
   const [session] = useSession();
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
   async function handleSubscribe() {
 
@@ -23,6 +28,9 @@ export function SubscribeButton() {
     }
 
     try {
+
+      setLoading(true);
+
       const response = await api.post('/subscribe')
 
       const { sessionId } = response.data;
@@ -35,8 +43,9 @@ export function SubscribeButton() {
 
     } catch (error) {
       alert(error.message);
+    } finally {
+      setLoading(false);
     }
-
   }
 
   return (
@@ -45,7 +54,7 @@ export function SubscribeButton() {
       className={styles.subscribeButton}
       onClick={handleSubscribe}
     >
-      Subscribe now
+      {loading ? <ReactLoading type="spokes" height="25px" width="25px" color="#fff" /> : 'Subscribe now'}
     </button>
   );
 }

@@ -1,10 +1,9 @@
-import { GetStaticProps } from 'next';
 import Head from 'next/head';
-
-import { SubscribeButton } from '../components/SubscribeButton';
-import { stripe } from '../services/stripe';
-
+import { GetStaticProps } from 'next';
 import styles from './home.module.scss';
+import { stripe } from '../services/stripe';
+import { SubscribeButton } from '../components/SubscribeButton';
+
 
 // 3 Formas principais de fazer uma chamada a uma API
 // Client-side

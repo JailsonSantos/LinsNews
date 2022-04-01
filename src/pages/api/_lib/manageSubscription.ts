@@ -1,11 +1,11 @@
-import { fauna } from "../../../services/fauna";
 import { query as q } from 'faunadb'
-import { stripe } from "../../../services/stripe";
+import { fauna } from "../../../services/fauna";
+import { stripe } from '../../../services/stripe';
 
 export async function saveSubscription(
   subscriptionId: string,
   customerId: string,
-  createAction = false
+  createAction = false,
 ) {
   const userRef = await fauna.query(
     q.Select(
@@ -48,7 +48,7 @@ export async function saveSubscription(
           )
         ),
         { data: subscriptionData }
-      ),
+      )
     )
   }
 }

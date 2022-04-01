@@ -1,11 +1,8 @@
-
-import { NextApiRequest, NextApiResponse } from "next";
-import { getSession } from 'next-auth/client'
-
-import { query as q } from 'faunadb'
-
-import { stripe } from "../../services/stripe";
+import { query as q } from 'faunadb';
 import { fauna } from "../../services/fauna";
+import { getSession } from 'next-auth/client';
+import { stripe } from "../../services/stripe";
+import { NextApiRequest, NextApiResponse } from "next";
 
 type User = {
   ref: {
@@ -49,6 +46,9 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 
       customerId = stripeCustomer.id
     }
+
+
+
 
     const stripeCheckoutSession = await stripe.checkout.sessions.create({
       customer: customerId,
