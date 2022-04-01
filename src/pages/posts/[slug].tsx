@@ -19,7 +19,7 @@ export default function Post({ post }: PostProps) {
   return (
     <>
       <Head>
-        <title>{post.title} | LinsNews</title>
+        <title>{post.title}</title>
       </Head>
       <main className={styles.container}>
         <article className={styles.post}>

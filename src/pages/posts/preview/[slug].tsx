@@ -35,7 +35,7 @@ export default function PostPreview({ post }: PostPreviewProps) {
   return (
     <>
       <Head>
-        <title>{post.title} | LinsNews</title>
+        <title>{post.title}</title>
       </Head>
       <main className={styles.container}>
         <article className={styles.post}>

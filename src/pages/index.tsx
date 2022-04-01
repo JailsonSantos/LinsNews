@@ -27,7 +27,7 @@ export default function Home({ product }: HomeProps) {
   return (
     <>
       <Head>
-        <title> Home | lins.news</title>
+        <title> Home | LinsNews</title>
       </Head>
 
       <main className={styles.contentContainer}>
