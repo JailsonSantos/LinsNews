@@ -3,6 +3,9 @@
 </h1>
 
 <p align="center">
+  <img alt="App da aplicação" title="#App" src="./src/assets/app.png" width="700px">
+</P>
+<p align="center">
   Uma aplicação web para assinantes de conteúdos em textos, desenvolvida com NextJS, ReactJS e Typescript.
 </p>
 
@@ -39,22 +42,16 @@
 <p align="center">
   <img alt="Home" title="#Home" src="./src/assets/home.jpg" width="700px">
   <hr color="white">
-
   <img alt="Posts" title="Posts" src="./src/assets/posts.jpg" width="700px">
   <hr color="white">
-
   <img alt="Usuario-nao-logado" title="Usuario-nao-logado" src="./src/assets/usuario-nao-logado.jpg" width="700px">
   <hr color="white">
-
   <img alt="Logado-sem-conta-ativa" title="Logado-sem-conta-ativa" src="./src/assets/logado-sem-conta-ativa.jpg" width="700px">
   <hr color="white">
-
   <img alt="SessaoDePagamento" title="SessaoDePagamento" src="./src/assets/sessao-de-pagamento.jpg" width="700px">
   <hr color="white">
-
   <img alt="Sessao-posts" title="Sessao-posts" src="./src/assets/sessao-posts.jpg" width="700px">
   <hr color="white">
-
   <img alt="Logado-com-conta-ativa" title="Logado-com-conta-ativa" src="./src/assets/logado-com-conta-ativa.jpg" width="700px">
 </p>
 
