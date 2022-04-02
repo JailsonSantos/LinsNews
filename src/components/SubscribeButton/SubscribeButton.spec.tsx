@@ -55,7 +55,7 @@ describe('SubscribeButton component', () => {
         },
         activeSubscription: 'fake-active-subscription',
         expires: 'fake-expires'
-      },
+      } as any,
       false
     ])
 

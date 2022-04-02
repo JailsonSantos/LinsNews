@@ -1,11 +1,11 @@
-import { AppProps } from 'next/app';
-import { Header } from '../components/Header';
-import NextNprogress from 'nextjs-progressbar';
 import { Provider as NextAuthProvider } from 'next-auth/client'
+import { AppProps } from 'next/app'
+import { Header } from '../components/Header'
+import NextNprogress from 'nextjs-progressbar';
 
-import '../styles/global.scss';
+import '../styles/global.scss'
 
-function App({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: AppProps) {
   return (
     <NextAuthProvider session={pageProps.session}>
       <NextNprogress
@@ -20,4 +20,4 @@ function App({ Component, pageProps }: AppProps) {
   )
 }
 
-export default App
+export default MyApp

@@ -62,9 +62,10 @@
 <p align="justify">As seguintes Tecnologias e APIS que foram usadas na construção do projeto</p>
 
 - [Node.js](https://nodejs.org/en/)
-- [Next.Js](https://nextjs.org/)
-- [ReactJS](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
+- [ReactJS](https://pt-br.reactjs.org/)
+- [Next.Js](https://nextjs.org/)
+- [NextAuth](https://next-auth.js.org/)
 - [Fauna](https://fauna.com/)
 - [Stripe](https://stripe.com/br)
 - [Prismic](https://prismic.io/)

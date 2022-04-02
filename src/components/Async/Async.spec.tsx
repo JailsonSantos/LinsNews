@@ -1,21 +1,18 @@
-import { render, screen, waitFor, waitForElementToBeRemoved } from '@testing-library/react'
-import { Async } from '.'
+import { render, screen, waitFor, waitForElementToBeRemoved } from "@testing-library/react"
+import { Async } from "."
 
 test('it renders correctly', async () => {
   render(<Async />)
 
-  expect(screen.getByText('Hello World')).toBeInTheDocument()
+  expect(screen.getByText('Hello World')).toBeInTheDocument();
+  // expect(await screen.findByText('Button', {}, { timeout: 3000 })).toBeInTheDocument(); METODO 1
+  // await waitFor(() => {
+  //   return expect(screen.getByText('Button')).toBeInTheDocument();
+  // }, { timeout: 3000 }); METODO 2
 
-  /*  // Espera algo acontecer Exemplo 1
-   await waitFor(async () => {
-     return expect(screen.getByText('Button')).toBeInTheDocument()
-   }) */
+  // await waitForElementToBeRemoved(screen.queryByText('Button')); METODO 1 REMOÇAO
 
-  /* // Espera algo acontecer Exemplo 2
-  await waitFor(async () => {
-    return expect(screen.queryByText('Button')).not.toBeInTheDocument()
-  }) */
-
-  // Espera algo acontece Exemplo 3
-  await waitForElementToBeRemoved(screen.queryByText('Button'))
+  await waitFor(() => {
+    return expect(screen.queryByText('Button')).toBeInTheDocument();
+  }, { timeout: 3000 }); // METODO 2 REMOÇAO
 })

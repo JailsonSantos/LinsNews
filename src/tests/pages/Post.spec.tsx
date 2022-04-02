@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { mocked } from 'jest-mock'
-import { getSession } from 'next-auth/react'
+import { getSession } from 'next-auth/client'
 import Post, { getServerSideProps } from '../../pages/posts/[slug]'
 import { getPrismicClient } from '../../services/prismic'
 
@@ -36,7 +36,7 @@ describe('Post page', () => {
     expect(response).toEqual(
       expect.objectContaining({
         redirect: expect.objectContaining({
-          destination: '/posts/preview/my-new-post'
+          destination: '/'
         })
       })
     )
