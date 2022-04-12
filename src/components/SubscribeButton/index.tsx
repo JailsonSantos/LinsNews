@@ -46,8 +46,9 @@ export function SubscribeButton() {
       className={styles.subscribeButton}
       onClick={handleSubscribe}
     >
-      {loading ? <ReactLoading type="spokes" height="25px" width="25px" color="#fff" /> : 'Subscribe now'}
-
+      Subscribe now
+      {/*       {loading ? <ReactLoading type="spokes" height="25px" width="25px" color="#fff" /> : 'Subscribe now'}
+ */}
     </button>
   )
 }

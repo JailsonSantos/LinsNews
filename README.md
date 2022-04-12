@@ -3,9 +3,6 @@
 </h1>
 
 <p align="center">
-  <img alt="App da aplicação" title="#App" src="./src/assets/app.png" width="700px">
-</P>
-<p align="center">
   Uma aplicação web para assinantes de conteúdos em textos, desenvolvida com NextJS, ReactJS e Typescript.
 </p>
 
@@ -21,7 +18,7 @@
 </p>
 
 <h2 align="center" id="sobre">Sobre</h2>
-<p align="justify">Uma aplicação web para assinantes de conteúdos em texto, nessa aplicacão, o usuário pode ter acesso a uma prévia os conteúdos por Título e dois paragráfos pré-carregados, caso o mesmo tenha interesse em consumir o contueúdo terão que fazer login com uma conta do GitHub, e fazer uma assinatura mensal, somente dessa forma terão acesso a todos os conteúdos da plataforma.</p>
+<p align="justify">Uma aplicação web para assinantes de conteúdos em texto, nessa aplicação, o usuário pode ter acesso a uma prévia os conteúdos por Título e dois paragráfos pré-carregados, caso os mesmos tenham interesse em consumir os contueúdos terão que fazer login com uma conta do GitHub, e fazer uma assinatura mensal, somente dessa forma terão acesso a todos os conteúdos da plataforma.</p>
 
 <h3 align="left" id="funcionalidades">Funcionalidades</h3>
 
@@ -42,29 +39,17 @@
 <p align="center">
   <img alt="Home" title="#Home" src="./src/assets/home.jpg" width="700px">
   <hr color="white">
-<<<<<<< HEAD
+</p>
+ 
+<p align="center">
   <img alt="Posts" title="Posts" src="./src/assets/posts.jpg" width="700px">
   <hr color="white">
+</p>
+ 
+<p align="center">
   <img alt="Usuario-nao-logado" title="Usuario-nao-logado" src="./src/assets/usuario-nao-logado.jpg" width="700px">
   <hr color="white">
-  <img alt="Logado-sem-conta-ativa" title="Logado-sem-conta-ativa" src="./src/assets/logado-sem-conta-ativa.jpg" width="700px">
-  <hr color="white">
-  <img alt="SessaoDePagamento" title="SessaoDePagamento" src="./src/assets/sessao-de-pagamento.jpg" width="700px">
-  <hr color="white">
-  <img alt="Sessao-posts" title="Sessao-posts" src="./src/assets/sessao-posts.jpg" width="700px">
-  <hr color="white">
-=======
- </p>
- 
- <p align="center">
-  <img alt="Posts" title="Posts" src="./src/assets/posts.jpg" width="700px">
-  <hr color="white">
- </p>
- 
- <p align="center">
-  <img alt="Usuario-nao-logado" title="Usuario-nao-logado" src="./src/assets/usuario-nao-logado.jpg" width="700px">
-  <hr color="white">
- </p>
+</p>
  
  <p align="center">
   <img alt="Logado-sem-conta-ativa" title="Logado-sem-conta-ativa" src="./src/assets/logado-sem-conta-ativa.jpg" width="700px">
@@ -82,7 +67,6 @@
 </p>
  
 <p align="center">
->>>>>>> c4ec6d0074356bab9379adc84ef3db582b133f4c
   <img alt="Logado-com-conta-ativa" title="Logado-com-conta-ativa" src="./src/assets/logado-com-conta-ativa.jpg" width="700px">
   <hr color="white">
 </p>
